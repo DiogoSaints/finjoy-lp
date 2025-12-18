@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@layer base {
+    :root {
+        --background: 222.2 84% 4.9%;
+        --foreground: 210 40% 98%;
+        --card: 222.2 84% 4.9%;
+        --card-foreground: 210 40% 98%;
+        --primary: 156 62% 57%;
+        --primary-foreground: 210 40% 98%;
+        --secondary: 217.2 32.6% 17.5%;
+        --secondary-foreground: 210 40% 98%;
+        --muted: 217.2 32.6% 17.5%;
+        --muted-foreground: 215 20.2% 65.1%;
+        --accent: 217.2 32.6% 17.5%;
+        --accent-foreground: 210 40% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 217.2 32.6% 17.5%;
+        --input: 217.2 32.6% 17.5%;
+        --ring: 156 62% 57%;
+        --radius: 0.5rem;
+    }
+
+    * {
+        border-color: hsl(var(--border));
+    }
+
+    html,
+    body {
+        background-color: hsl(var(--background));
+        color: hsl(var(--foreground));
+        font-family: 'Inter', -apple-system, system-ui, sans-serif;
+        line-height: 1.6;
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100vw;
+    }
+}
+
+@layer utilities {
+    .animate-scroll {
+        animation: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+    }
+
+    .animate-float {
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .animate-float-delayed {
+        animation: float-delayed 7s ease-in-out infinite;
+    }
+
+    .animate-float-slow {
+        animation: float-slow 8s ease-in-out infinite;
+    }
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+@keyframes float-delayed {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-25px) rotate(-5deg);
+    }
+}
+
+@keyframes float-slow {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(3deg);
+    }
+}
