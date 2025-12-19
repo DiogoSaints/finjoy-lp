@@ -1,37 +1,37 @@
 {
-  "name": "temp_app",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "nome": "aplicativo_temp",
+  "privado": verdadeiro,
+  "versão": "0,0,0",
+  "tipo": "módulo",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-    "start": "vite preview --host 0.0.0.0 --port 3000"
+  "dev": "vite",
+  "construir": "tsc -b && vite build",
+  "fiapo": "eslint.",
+  "prévia": "vite preview --host 0.0.0.0 --porta 4173",
+  "começar": "vite preview --host 0.0.0.0 --porta 4173"
   },
-  "dependencies": {
+  "dependências": {
     "@radix-ui/react-slot": "^1.2.4",
     "@tailwindcss/vite": "^4.1.18",
-    "class-variance-authority": "^0.7.1",
+    "autoridade de variedade de classe": "^0,7,1",
     "clsx": "^2.1.1",
-    "framer-motion": "^12.23.26",
-    "lucide-react": "^0.562.0",
-    "react": "^19.2.0",
+    "movimento-de-quadro": "^12.23.26",
+    "reação ao lúcido": "^0,562,0",
+    "reagir": "^19.2.0",
     "react-dom": "^19.2.0",
-    "tailwind-merge": "^3.4.0"
+    "fusão de vento de cauda": "^3.4.0"
   },
-  "devDependencies": {
+  "devDependências": {
     "@eslint/js": "^9.39.1",
-    "@types/node": "^24.10.1",
-    "@types/react": "^19.2.5",
+    "@tipos/nó": "^24.10.1",
+    "@tipos/reagir": "^19.2.5",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
-    "autoprefixer": "^10.4.23",
+    "autoprefixador": "^10.4.23",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
-    "globals": "^16.5.0",
+    "globais": "^16.5.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.18",
     "typescript": "~5.9.3",
